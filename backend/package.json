@@ -8,6 +8,7 @@
   "license": "MIT",
   "devDependencies": {
     "@types/koa": "^2.13.3",
+    "@types/koa-bodyparser": "^4.3.1",
     "@types/koa-router": "^7.4.2",
     "@types/node": "^15.12.4",
     "ts-node-dev": "^1.1.6",
@@ -17,6 +18,7 @@
     "class-transformer": "^0.4.0",
     "class-validator": "^0.13.1",
     "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0",
     "koa-router": "^10.0.0",
     "koa-ts-controllers": "^3.2.2"
   }
