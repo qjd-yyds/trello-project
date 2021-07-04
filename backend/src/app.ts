@@ -5,9 +5,17 @@ import KoaRouter from 'koa-router';
 import path from 'path';
 import { bootstrapControllers, Params } from 'koa-ts-controllers';
 import KoaBodyParser from 'koa-bodyparser';
-const app = new koa();
-const router = new KoaRouter();
+import { Sequelize } from 'sequelize-typescript';
+
 (async () => {
+  const app = new koa();
+  const router = new KoaRouter();
+  // 连接数据库 
+  const db = new Sequelize({
+    ...configs.database,
+    // ORM 操作数据库 dom 最终转换成sql
+    models: [__dirname + '/models/**/*']
+  });
   await bootstrapControllers(app, {
     router,
     basePath: '/api',

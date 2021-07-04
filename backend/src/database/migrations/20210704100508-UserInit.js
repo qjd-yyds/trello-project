@@ -1,5 +1,5 @@
 'use strict';
-// ./node_modules/.bin/sequelize migration:create --name UserInit
+// ./node_modules/.bin/sequelize migration:create --name UserInit 迁徙脚本操作表结构
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     /**

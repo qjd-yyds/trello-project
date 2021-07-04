@@ -1,5 +1,5 @@
 'use strict';
-// ./node_modules/.bin/sequelize migration:create --name UserAddUpdateAt
+// ./node_modules/.bin/sequelize migration:create --name UserAddUpdateAt 迁徙脚本,操作表结构
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     // 给user表添加列字段 updataAt
