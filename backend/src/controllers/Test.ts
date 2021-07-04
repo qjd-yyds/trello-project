@@ -1,5 +1,4 @@
-import { Body, Controller, Get, Header, IsNumberString, Params, Post, Query } from 'koa-ts-controllers';
-
+import { Body, Controller, Ctx, Get, Header, IsNumberString, Params, Post, Query } from 'koa-ts-controllers';
 class GetUserQuery {
   @IsNumberString(
     {},
